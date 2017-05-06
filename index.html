@@ -7,7 +7,7 @@
   <body>
     <section class="logo container">
       <div class="row">
-          <img class="img-principal col-12" src="assets/img/reciclatoyl-02.png" alt="logo" width="10">
+          <img class="img-principal col-12" src="assets/img/reciclatoyl-02.png" alt="logo" width="100">
       </div>
         <section class="row jaja">
           <div class="botones">
@@ -18,46 +18,64 @@
     </section>
 
 
-    <section class="juego">
-      <div class="holder">
-        <h1>Reciclatoy <span>Porque salvar al mundo no es solo un juego!</span></h1>
-        <div id="score">0</div>
-        <div id="organic" class="trash">
-          <img alt="" src="assets/img/verde36_full.png" width="350"/>
+    <section class="juego container">
+        <!-- <img src="assets/img/reciclatoyl-02.png" alt="logo" width="300"> -->
+        <!-- <h1>Reciclatoy <span>Porque salvar al mundo no es solo un juego!</span></h1> -->
+        <section class="row flechas">
+          <div class="col-4">
+            <img src="assets/img/back-undo-return-button-png-8.png" alt="return" width="40">
+            <img src="assets/img/counterclockwise-arrow-icon.png" alt="again" width="40">
+          </div>
+          <div class="col-4 puntos">
+            <div id="star">
+            <div id="score">0</div>
+              <img src="assets/img/star_gold_256.png" alt="star" width="50">
+            </div>
+          </div>
+        </section>
+        <div class="row">
+          <div id="organic" class="trash col-6">
+            <img alt="" src="assets/img/verde36_full.png" width="350"/>
+          </div>
+          <div id="inorganic" class="trash col-6">
+            <img alt="" src="assets/img/bote-gris.png" width="350"/>
+          </div>
         </div>
-        <div id="inorganic" class="trash">
-          <img alt="" src="assets/img/bote-gris.png" width="350"/>
+        <div class="row">
+          <div class="iconos">
+            <ul>
+              <li>
+                <a draggable="true" href="" id="one" class="organic">
+                  <img src="assets/img/eaten-apple-center.png" alt="" width="50">
+                </a>
+              </li>
+              <li>
+                <a draggable="true" href="" id="two" class="organic">
+                  <img src="assets/img/icon.png" alt="" width="50">
+                </a>
+              </li>
+              <li>
+                <a draggable="true" href="" id="three" class="organic">
+                  <img src="assets/img/peeled-banana.png" alt="" width="50">
+                </a>
+              </li>
+              <li>
+                <a draggable="true" href="" id="four" class="organic">
+                  <img src="assets/img/two-tea-leaves.png" alt="" width="50">
+                </a>
+              </li>
+              <li>
+                <a draggable="true" href="" id="five" class="organic">
+                  <img src="assets/img/watermelon-outlined-slice.png" alt="" width="50">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-        <ul>
-          <li>
-            <a draggable="true" href="" id="one" class="organic">
-              <img src="assets/img/eaten-apple-center.png" alt="" width="50">
-            </a>
-          </li>
-          <li>
-            <a draggable="true" href="" id="two" class="organic">
-            <img src="assets/img/icon.png" alt="" width="50">
-            </a>
-          </li>
-          <li>
-            <a draggable="true" href="" id="three" class="organic">
-            <img src="assets/img/peeled-banana.png" alt="" width="50">
-            </a>
-          </li>
-          <li>
-            <a draggable="true" href="" id="four" class="organic">
-            <img src="assets/img/two-tea-leaves.png" alt="" width="50">
-            </a>
-          </li>
-          <li>
-            <a draggable="true" href="" id="five" class="organic">
-            <img src="assets/img/watermelon-outlined-slice.png" alt="" width="50">
-            </a>
-          </li>
-        </ul>
-        </div>
-      </div>
+
+
+
+
     </section>
     </section>
     <script

@@ -121,8 +121,12 @@
   padding: 10px 100px 60px 400px;
 }
 
-.jaja{
-  padding:
+.iconos{
+  padding-right: -500px;
+}
+
+ul{
+  display: inline-flex;
 }
 
 .botones{
@@ -147,20 +151,29 @@ button{
   font-family: 'Lato', sans-serif;
 }*/
 
-h1{
+/*h1{
   color: #fff;
   text-align: center;
   font-weight: 200;
   font-size: 80px;
-}
-h1 span{
+}*/
+/*h1 span{
   display: block;
   font-size: 40px;
+}*/
+
+
+.flechas{
+  width: 150%;
+  margin-left: 0;
 }
 
-.holder{
-  width: 600px;
-  margin: 0px auto;
+#star{
+  /*border: 1px solid black;*/
+}
+
+#puntos{
+  border: 1px solid black;
 }
 
 .juego{
@@ -200,10 +213,6 @@ ul li:last-child a{ background: #9b59b6}
   background-color: rgba(238,238,238, 0.5);
 }
 
-li a:hover:after {
-  content: ' (drag me)';
-}
-
 ul{
   margin-left: 200px;
   min-height: 300px;
@@ -220,7 +229,7 @@ li.over {
 
 .trash{
   display: inline-block;
-  margin: 20px;
+  padding: 70px 220px;
 }
 
 #organic {
