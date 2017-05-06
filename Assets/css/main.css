@@ -109,15 +109,27 @@
 }
 
 /*Inicio*/
-.logo{
+.logo, .inicio{
   background: #FFC75D;
 }
-.img-principal {
+.img-principal{
   padding: 1px 300px ;
 }
 
-.iniciar-sesion{
+.inicio{
+  padding: 1px 600px;
+}
+
+button{
   display: block;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  margin-top: 20px;
+  background: #e52a01;
+  color: #fff;
+  padding: 20px;
 }
 
 /*body{
