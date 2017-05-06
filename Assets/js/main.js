@@ -104,16 +104,39 @@ $(document).ready(function(){
     // addEvent(inorganic, 'dragleave', function () {
     //   this.className = '';
     // });
+    var puntaje = 0;
 
     addEvent(organic, 'drop', function (e) {
       if (e.stopPropagation) e.stopPropagation(); // stops the browser from redirecting...why???
         var el = document.getElementById(e.dataTransfer.getData('Text'));
-        console.log($(e.toElement.parentElement).attr("id"));
+        //console.log($(e.toElement.parentElement).attr("id"));
     // addEvent(inorganic, 'drop', function (e) {
     //   if (e.stopPropagation) e.stopPropagation(); // stops the browser from redirecting...why???
     //     var el = document.getElementById(e.dataTransfer.getData('Text'));
 
-        //console.log($(el).attr("id"));
+        console.log($(el).attr("class"));
+        console.log($(e.toElement.parentElement).attr("id"));
+
+        // function contador(elem){
+          if($(el).attr("class") == $(e.toElement.parentElement).attr("id")){
+            //puntaje.innerHTML += 10;
+            puntaje += 10;
+            $("#score").html("Tu puntaje es = " + puntaje);
+
+            // contador = elem.data('from') + 10;
+            // elem.data('from', contador);
+            // elem.html(elem.data('from'));
+          }else{
+            alert(":(");
+          }
+        
+
+        // $( document ).ready(function() {
+        //   $('#score').each(function(i) {
+        //     contador($(this + 10));
+        //
+        //   });
+        // });
 
         el.parentNode.removeChild(el);
 
@@ -151,9 +174,5 @@ $(document).ready(function(){
 //Funcionamiento de contador
 var puntaje = document.getElementById("score");
 var puntaje = 0;
-var comida = document.getElementsByClassName("food");
-var bote = document.getElementById("organic");
-
-if(comida === bote){
-  puntaje.innerHTML += 10;
-}
+//var comida = document.getElementsByClassName("food");
+//var bote = document.getElementById("organic");

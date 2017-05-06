@@ -1,6 +1,6 @@
 /*Clases reutilizables*/
 
-.contenedor {
+.container {
   width: 100%;
   margin: 0px auto;
 }
@@ -109,15 +109,24 @@
 }
 
 /*Inicio*/
-.logo, .inicio{
+.logo{
   background: #FFC75D;
 }
+
 .img-principal{
   padding: 1px 300px ;
 }
 
 .inicio{
-  padding: 1px 600px;
+  padding: 10px 100px 60px 400px;
+}
+
+.jaja{
+  padding:
+}
+
+.botones{
+  width: 130px;
 }
 
 button{
@@ -126,10 +135,9 @@ button{
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px solid #000000;
-  margin-top: 20px;
+  /*margin: 20px 200px 60px 200px;*/
   background: #e52a01;
   color: #fff;
-  padding: 20px;
 }
 
 /*body{
