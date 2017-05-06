@@ -129,8 +129,16 @@ ul{
   display: inline-flex;
 }
 
+.jaja{
+  padding: 50px 550px;
+}
+
 .botones{
   width: 130px;
+}
+
+.iniciar-sesion{
+  margin-top: 10px;
 }
 
 button{
@@ -164,20 +172,40 @@ button{
 
 
 .flechas{
-  width: 150%;
-  margin-left: 0;
+  display: inline;
+  padding: 50px;
+}
+
+.back, .refresh{
+  margin: 10px;
+}
+
+.vidas{
+  padding: 10px;
 }
 
 #star{
   /*border: 1px solid black;*/
+
 }
 
-#puntos{
-  border: 1px solid black;
+/*.puntos{
+  display: block;
+}*/
+#star{
+  display: inline;
+  margin: 10px;
+}
+
+#score{
+  display: inline;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 10px;
 }
 
 .juego{
-  background: #e74c3c;
+  background: #99a1c1;
 }
 
 li {

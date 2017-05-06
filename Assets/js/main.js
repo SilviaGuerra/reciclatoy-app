@@ -121,7 +121,7 @@ $(document).ready(function(){
           if($(el).attr("class") == $(e.toElement.parentElement).attr("id")){
             //puntaje.innerHTML += 10;
             puntaje += 10;
-            $("#score").html("Tu puntaje es = " + puntaje);
+            $("#score").html(puntaje + " Pts");
 
             // contador = elem.data('from') + 10;
             // elem.data('from', contador);
@@ -129,7 +129,7 @@ $(document).ready(function(){
           }else{
             alert(":(");
           }
-        
+
 
         // $( document ).ready(function() {
         //   $('#score').each(function(i) {
