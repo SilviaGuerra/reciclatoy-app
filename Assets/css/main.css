@@ -1,0 +1,221 @@
+/*Clases reutilizables*/
+
+.contenedor {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+[class*="col-"] {
+  min-height: 7px;
+  padding: 12px;
+  float: left;
+}
+
+.col-1 {
+  /* (1/12) x 100% */
+  width: 8.333333%;
+}
+
+.col-2 {
+  /* (2/12) x 100% */
+  width: 16.66667%;
+}
+
+.col-3 {
+  /* (3/12) x 100% */
+  width: 25%;
+}
+
+.col-4 {
+  /* (4/12) x 100% */
+  width: 33.33333%;
+}
+
+.col-5 {
+  /* (5/12) x 100% */
+  width: 41.666667%;
+}
+
+.col-6 {
+  /* (6/12) x 100% */
+  width: 50%;
+}
+
+.col-7 {
+  /* (7/12) x 100% */
+  width: 58.333333%;
+}
+
+.col-8 {
+  /* (8/12) x 100% */
+  width: 66.6666667%;
+}
+
+.col-9 {
+  /* (9/12) x 100% */
+  width: 75%;
+}
+
+.col-10 {
+  /* (10/12) x 100% */
+  width: 83.333333%;
+}
+
+.col-11 {
+  /* (11/12) x 100% */
+  width: 91.6666%;
+}
+
+.col-12 {
+  /* (12/12) x 100% */
+  width: 100%;
+}
+
+/*Inicio*/
+.img-principal {
+  width: 300px;
+}
+
+.iniciar-sesion{
+  display: block;
+}
+
+/*body{
+  margin: 0px;
+  padding: 0px;
+  background: #e74c3c;
+  font-family: 'Lato', sans-serif;
+}*/
+
+h1{
+  color: #fff;
+  text-align: center;
+  font-weight: 200;
+  font-size: 80px;
+}
+h1 span{
+  display: block;
+  font-size: 40px;
+}
+
+.holder{
+  width: 600px;
+  margin: 0px auto;
+}
+
+.juego{
+  background: #e74c3c;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+  width: 150px;
+  background: #eee;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  cursor: move;
+}
+
+ul li:first-child a{ background: #34495e}
+ul li:nth-child(2) a{ background: #3498db}
+ul li:nth-child(3) a{ background: #f39c12}
+ul li:nth-child(4) a{ background: #27ae60}
+ul li:last-child a{ background: #9b59b6}
+
+*[draggable=true] {
+  -moz-user-select:none;
+  -khtml-user-drag: element;
+  cursor: move;
+}
+
+*:-khtml-drag {
+  background-color: rgba(238,238,238, 0.5);
+}
+
+li a:hover:after {
+  content: ' (drag me)';
+}
+
+ul{
+  margin-left: 200px;
+  min-height: 300px;
+}
+
+li.over {
+  border-color: #333;
+  background: #ccc;
+}
+
+.food{
+  display: inline-block;
+}
+
+.trash{
+  display: inline-block;
+  margin: 20px;
+}
+
+#organic {
+  height: 250px;
+  width: 166px;
+
+}
+
+#organic.over {
+  background: url(images/bin.jpg) top left no-repeat;
+}
+
+#organic p {
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 166px;
+  font-size: 32px;
+  color: #fff;
+  top: -80px;
+  left: 40px;
+}
+
+/*font-face*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
