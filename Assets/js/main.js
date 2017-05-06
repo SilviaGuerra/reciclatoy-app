@@ -147,3 +147,13 @@ $(document).ready(function(){
       });
 
 });
+
+//Funcionamiento de contador
+var puntaje = document.getElementById("score");
+var puntaje = 0;
+var comida = document.getElementsByClassName("food");
+var bote = document.getElementById("organic");
+
+if(comida === bote){
+  puntaje.innerHTML += 10;
+}
