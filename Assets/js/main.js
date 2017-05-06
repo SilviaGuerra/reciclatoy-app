@@ -105,6 +105,7 @@ $(document).ready(function(){
     //   this.className = '';
     // });
     var puntaje = 0;
+    var huellitas = 3;
 
     addEvent(organic, 'drop', function (e) {
       if (e.stopPropagation) e.stopPropagation(); // stops the browser from redirecting...why???
@@ -126,8 +127,13 @@ $(document).ready(function(){
             // contador = elem.data('from') + 10;
             // elem.data('from', contador);
             // elem.html(elem.data('from'));
-          }else{
-            alert(":(");
+          }else if($(el).attr("class") != $(e.toElement.parentElement).attr("id")){
+            $(".vidas > img").last().remove();
+              if($(".vidas > img").length <= 0){
+                alert(":(");
+              }
+            length()
+
           }
 
 

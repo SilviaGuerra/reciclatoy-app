@@ -117,28 +117,12 @@
   padding: 1px 300px ;
 }
 
-.inicio{
-  padding: 10px 100px 60px 400px;
-}
-
-.iconos{
-  padding-right: -500px;
-}
-
-ul{
-  display: inline-flex;
-}
-
-.jaja{
+.registro{
   padding: 50px 550px;
 }
 
 .botones{
   width: 130px;
-}
-
-.iniciar-sesion{
-  margin-top: 10px;
 }
 
 button{
@@ -147,29 +131,19 @@ button{
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   border: 0px solid #000000;
-  /*margin: 20px 200px 60px 200px;*/
   background: #e52a01;
+  font-size: 15px;
+  letter-spacing: 0.5px;
   color: #fff;
 }
 
-/*body{
-  margin: 0px;
-  padding: 0px;
-  background: #e74c3c;
-  font-family: 'Lato', sans-serif;
-}*/
+.iniciar-sesion{
+  margin-top: 10px;
+}
 
-/*h1{
-  color: #fff;
-  text-align: center;
-  font-weight: 200;
-  font-size: 80px;
-}*/
-/*h1 span{
-  display: block;
-  font-size: 40px;
-}*/
-
+.juego{
+  background: #99a1c1;
+}
 
 .flechas{
   display: inline;
@@ -180,23 +154,6 @@ button{
   margin: 10px;
 }
 
-.vidas{
-  padding: 10px;
-}
-
-#star{
-  /*border: 1px solid black;*/
-
-}
-
-/*.puntos{
-  display: block;
-}*/
-#star{
-  display: inline;
-  margin: 10px;
-}
-
 #score{
   display: inline;
   color: #fff;
@@ -204,8 +161,34 @@ button{
   margin-left: 10px;
 }
 
-.juego{
-  background: #99a1c1;
+#star{
+  display: inline;
+  margin: 10px;
+}
+
+.vidas{
+  padding: 10px;
+}
+
+#organic {
+  padding-left: 150px;
+}
+
+#organic.over {
+  background: url(images/bin.jpg) top left no-repeat;
+}
+
+.trash{
+  display: inline-block;
+  padding: 70px 10px;
+}
+
+.iconos{
+  padding-right: -500px;
+}
+
+ul{
+  display: inline-flex;
 }
 
 li {
@@ -253,33 +236,6 @@ li.over {
 
 .food{
   display: inline-block;
-}
-
-.trash{
-  display: inline-block;
-  padding: 70px 220px;
-}
-
-#organic {
-  height: 250px;
-  width: 166px;
-
-}
-
-#organic.over {
-  background: url(images/bin.jpg) top left no-repeat;
-}
-
-#organic p {
-  font-weight: bold;
-  text-align: center;
-  position: absolute;
-  bottom: 20px;
-  width: 166px;
-  font-size: 32px;
-  color: #fff;
-  top: -80px;
-  left: 40px;
 }
 
 /*font-face*/
