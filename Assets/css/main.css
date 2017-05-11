@@ -142,16 +142,28 @@ button{
 }
 
 .juego{
-  background: #99a1c1;
+  background: #72a242;
+  height: 700px;
+}
+
+nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .flechas{
-  display: inline;
-  padding: 50px;
+  padding: 40px;
+  margin-left: 200px;
 }
 
 .back, .refresh{
-  margin: 10px;
+  margin: 20px;
+}
+
+.puntos{
+  padding: 20px;
+  margin-right: 200px;
 }
 
 #score{
@@ -170,25 +182,23 @@ button{
   padding: 10px;
 }
 
-#organic {
-  padding-left: 150px;
+.bin{
+  display: flex;
+  justify-content: center;
+}
+
+.trash{
+  margin: 20px;
 }
 
 #organic.over {
   background: url(images/bin.jpg) top left no-repeat;
 }
 
-.trash{
-  display: inline-block;
-  padding: 70px 10px;
-}
-
-.iconos{
-  padding-right: -500px;
-}
-
 ul{
-  display: inline-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 li {
@@ -208,11 +218,12 @@ li a {
   cursor: move;
 }
 
-ul li:first-child a{ background: #34495e}
-ul li:nth-child(2) a{ background: #3498db}
-ul li:nth-child(3) a{ background: #f39c12}
-ul li:nth-child(4) a{ background: #27ae60}
-ul li:last-child a{ background: #9b59b6}
+ul li:first-child a{ background: #b166b6}
+ul li:nth-child(2) a{ background: #ff85cb}
+ul li:nth-child(3) a{ background: #4aa8db}
+ul li:nth-child(4) a{ background:	#a7f46c}
+ul li:nth-child(5) a{ background: #fdef14}
+ul li:last-child a{ background: #ff432e}
 
 *[draggable=true] {
   -moz-user-select:none;
@@ -222,11 +233,6 @@ ul li:last-child a{ background: #9b59b6}
 
 *:-khtml-drag {
   background-color: rgba(238,238,238, 0.5);
-}
-
-ul{
-  margin-left: 200px;
-  min-height: 300px;
 }
 
 li.over {

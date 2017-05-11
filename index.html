@@ -2,8 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>App</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <section class="logo container">
@@ -17,65 +20,69 @@
           </div>
         </section>
     </section>
-    <section class="juego container">
-      <section class="row">
-        <div class="col-4 flechas">
-          <img src="assets/img/back1.png" alt="return" width="40" class="back">
-          <img src="assets/img/refresh.png" alt="again" width="35" class="refresh">
+    <section class="juego">
+      <nav>
+        <div class="flechas">
+          <img src="assets/img/back-naranja.svg" alt="return" width="40" class="back">
+          <img src="assets/img/refresh-naranja.svg" alt="again" width="35" class="refresh">
         </div>
-          <div class="col-4"></div>
-          <div class="col-4 puntos">
-            <div id="score">0</div>
-            <div id="star">
-              <img src="assets/img/star_gold_256.png" alt="star" width="50">
-            </div>
-            <div class="vidas">
-              <img src="assets/img/huella.png" alt="huella" width="30" id="3">
-              <img src="assets/img/huella.png" alt="huella" width="30" id="2">
-              <img src="assets/img/huella.png" alt="huella" width="30" id="1">
-            </div>
+        <div class="tiempo"></div>
+        <div class="puntos">
+          <div id="score">0</div>
+          <div id="star">
+            <img src="assets/img/star.svg" alt="star" width="50">
           </div>
-        </section>
-        <div class="row">
-          <div id="organic" class="trash col-6">
-            <img alt="" src="assets/img/dfg - verde.png" width="350"/>
-          </div>
-          <div id="inorganic" class="trash col-6">
-            <img alt="" src="assets/img/dfg - gris.png" width="350"/>
+          <div class="vidas">
+            <img src="assets/img/huella.png" alt="huella" width="30" id="3">
+            <img src="assets/img/huella.png" alt="huella" width="30" id="2">
+            <img src="assets/img/huella.png" alt="huella" width="30" id="1">
           </div>
         </div>
-        <div class="row">
-          <div class="iconos">
-            <ul>
-              <li>
-                <a draggable="true" href="" id="one" class="organic">
-                  <img src="assets/img/eaten-apple-center.png" alt="" width="50">
-                </a>
-              </li>
-              <li>
-                <a draggable="true" href="" id="two" class="organic">
-                  <img src="assets/img/icon.png" alt="" width="50">
-                </a>
-              </li>
-              <li>
-                <a draggable="true" href="" id="three" class="organic">
-                  <img src="assets/img/peeled-banana.png" alt="" width="50">
-                </a>
-              </li>
-              <li>
-                <a draggable="true" href="" id="four" class="organic">
-                  <img src="assets/img/two-tea-leaves.png" alt="" width="50">
-                </a>
-              </li>
-              <li>
-                <a draggable="true" href="" id="five" class="organic">
-                  <img src="assets/img/watermelon-outlined-slice.png" alt="" width="50">
-                </a>
-              </li>
-            </ul>
-          </div>
+      </nav>
+      <section class="bin">
+        <div id="organic" class="trash">
+          <img alt="organic" src="assets/img/recycling-can.svg" width="250"/>
         </div>
-    </section>
+        <div id="inorganic" class="trash">
+          <img alt="inorganic" src="assets/img/recycling-can (1).svg" width="250"/>
+        </div>
+      </section>
+      <section>
+        <div class="iconos">
+          <ul>
+            <li>
+              <a draggable="true" id="one" class="organic">
+                <img src="assets/img/eaten-apple-center.png" alt="" width="50">
+              </a>
+            </li>
+            <li>
+              <a draggable="true" id="two" class="organic">
+                <img src="assets/img/icon.png" alt="apple" width="50">
+              </a>
+            </li>
+            <li>
+              <a draggable="true" href="" id="three" class="organic">
+                <img src="assets/img/peeled-banana.png" alt="peeled-banana" width="50">
+              </a>
+            </li>
+            <li>
+              <a draggable="true" href="" id="four" class="organic">
+                <img src="assets/img/two-tea-leaves.png" alt="" width="50">
+              </a>
+            </li>
+            <li>
+              <a draggable="true" href="" id="five" class="organic">
+                <img src="assets/img/watermelon-outlined-slice.png" alt="" width="50">
+              </a>
+            </li>
+            <li>
+              <a draggable="true" href="" id="five" class="organic">
+                <img src="assets/img/egg.png" alt="" width="50">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </section>
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
