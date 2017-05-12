@@ -86,28 +86,6 @@
   box-sizing: border-box;
 }
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.container:before, .container:after {
-  content: " ";
-  display: table;
-}
-
-*:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.container:after {
-  clear: both;
-}
-
 /*Inicio*/
 .logo{
   background: #FFC75D;
@@ -143,7 +121,7 @@ button{
 
 .juego{
   background: #FFA07A;
-  height: 700px;
+  width: 100%;
 }
 
 nav{

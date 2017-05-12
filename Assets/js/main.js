@@ -1,6 +1,7 @@
 //Funcionamiento de desaparecer basura
 
 $(document).ready(function(){
+  // $('.modal').modal();
   var addEvent = (function () {
     if (document.addEventListener) {
       return function (el, type, fn) {
@@ -70,7 +71,6 @@ $(document).ready(function(){
   }
 
   var organic = $(".trash");
-  // var inorganic = document.querySelector('#inorganic');
 
   addEvent(organic, 'dragover', function (e) {
     if (e.preventDefault) e.preventDefault(); // allows us to drop
@@ -79,41 +79,20 @@ $(document).ready(function(){
       return false;
     });
 
-  // addEvent(inorganic, 'dragover', function (e) {
-  //   if (e.preventDefault) e.preventDefault(); // allows us to drop
-  //     this.className = 'over';
-  //     e.dataTransfer.dropEffect = 'copy';
-  //     return false;
-  //   });
-
     // to get IE to work
     addEvent(organic, 'dragenter', function (e) {
-      //this.className = 'over';
       return false;
     });
 
-    // addEvent(inorganic, 'dragenter', function (e) {
-    //   this.className = 'over';
-    //   return false;
-    // });
-
     addEvent(organic, 'dragleave', function () {
-      //this.className = '';
     });
 
-    // addEvent(inorganic, 'dragleave', function () {
-    //   this.className = '';
-    // });
     var puntaje = 0;
     var huellitas = 3;
 
     addEvent(organic, 'drop', function (e) {
       if (e.stopPropagation) e.stopPropagation(); // stops the browser from redirecting...why???
         var el = document.getElementById(e.dataTransfer.getData('Text'));
-        //console.log($(e.toElement.parentElement).attr("id"));
-    // addEvent(inorganic, 'drop', function (e) {
-    //   if (e.stopPropagation) e.stopPropagation(); // stops the browser from redirecting...why???
-    //     var el = document.getElementById(e.dataTransfer.getData('Text'));
 
         console.log($(el).attr("class"));
         console.log($(e.toElement.parentElement).attr("id"));
@@ -123,10 +102,6 @@ $(document).ready(function(){
             //puntaje.innerHTML += 10;
             puntaje += 10;
             $("#score").html(puntaje + " Pts");
-
-            // contador = elem.data('from') + 10;
-            // elem.data('from', contador);
-            // elem.html(elem.data('from'));
           }else if($(el).attr("class") != $(e.toElement.parentElement).attr("id")){
             $(".vidas > img").last().remove();
               if($(".vidas > img").length <= 0){
@@ -136,28 +111,15 @@ $(document).ready(function(){
 
           }
 
-
-        // $( document ).ready(function() {
-        //   $('#score').each(function(i) {
-        //     contador($(this + 10));
-        //
-        //   });
-        // });
-
         el.parentNode.removeChild(el);
 
         // stupid nom text + fade effect
         organic.className = '';
         yum.innerHTML = eat[parseInt(Math.random() * eat.length)];
 
-        // inorganic.className = '';
-        // yum.innerHTML = eat[parseInt(Math.random() * eat.length)];
-
         var y = yum.cloneNode(true);
-        // var yey = yum.cloneNode(true);
 
         organic.appendChild(y);
-        // inorganic.appendChild(y);
 
         setTimeout(function () {
           var t = setInterval(function () {
@@ -177,8 +139,6 @@ $(document).ready(function(){
 
 });
 
-//Funcionamiento de contador
-var puntaje = document.getElementById("score");
-var puntaje = 0;
-//var comida = document.getElementsByClassName("food");
-//var bote = document.getElementById("organic");
+$(".refresh").click(function(){
+  location.reload();
+});
