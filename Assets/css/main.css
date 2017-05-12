@@ -114,7 +114,7 @@
 }
 
 .img-principal{
-  padding: 1px 300px ;
+  padding: 1px 300px;
 }
 
 .registro{
@@ -142,7 +142,7 @@ button{
 }
 
 .juego{
-  background: #72a242;
+  background: #FFA07A;
   height: 700px;
 }
 
@@ -216,6 +216,9 @@ li a {
   text-align: center;
   font-size: 18px;
   cursor: move;
+  -webkit-box-shadow: 10px 10px 63px 9px rgba(0,0,0,0.5);
+  -moz-box-shadow: 10px 10px 63px 9px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 63px 9px rgba(0,0,0,0.5);
 }
 
 ul li:first-child a{ background: #b166b6}
