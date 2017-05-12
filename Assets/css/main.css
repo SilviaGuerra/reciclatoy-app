@@ -230,6 +230,10 @@ ul li:nth-child(2) a{ background: #ff85cb}
 ul li:nth-child(3) a{ background: #4aa8db}
 ul li:nth-child(4) a{ background:	#a7f46c}
 ul li:nth-child(5) a{ background: #fdef14}
+ul li:nth-child(6) a{ background: #CC334D}
+ul li:nth-child(7) a{ background: #33CCB3}
+ul li:nth-child(8) a{ background: #b834a5}
+ul li:nth-child(9) a{ background: #fdef14}
 ul li:last-child a{ background: #ff432e}
 
 *[draggable=true] {
